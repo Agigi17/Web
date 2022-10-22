@@ -18,6 +18,8 @@
            background-size: cover;
            background-position: center;
            background-repeat: no-repeat;
+           display: flex;
+           flex-direction: column;
           }
        
 
@@ -26,10 +28,9 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            
             right: 0;
             top: 10px;
+            align-self: flex-end;
         }
 
         li {
@@ -44,25 +45,35 @@
             text-decoration: none;
         }
 
+        .content {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
         li a:hover:not(.active) {
             color: #FF6600;
         }
 
      
         .row::after{
-       content: "";
-       clear: both;
-       display: table;
-            }
+            content: "";
+            clear: both;
+            display: table;
+        }
 
          .column {
-    float: rght;
-    width: 150;
-    padding: 30px;
-     }
+            float: rght;
+            padding: 30px;
+            display: flex;
+        }
 
-
-
+        h3 {
+            color: #fff;
+            align-self: center;
+            margin-left: 20px;
+        }
     </style>
 </head>
 
@@ -76,20 +87,63 @@
         <li><a href="playlist.html" target="_blank">PLAYLIST</a></li>
         
     </ul>
-
-    <div class="row">
-        <div class="column">
-          <img src="images/001.jpg" style="width:150">
+    <div class="content">
+        <div class="row">
+            <div class="column">
+              <img src="images/001.jpg" style="width:150">
+              <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/002.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/003.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/004.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
         </div>
-        <div class="column">
-            <img src="images/002.jpg"  style="width:150">
-          </div>
-          <div class="column">
-            <img src="images/003.jpg"  style="width:150">
-          </div>
-          <div class="column">
-            <img src="images/004.jpg"  style="width:150">
-          </div>
+        <div class="row">
+            <div class="column">
+              <img src="images/001.jpg" style="width:150">
+              <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/002.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/003.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/004.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img src="images/001.jpg" style="width:150">
+              <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/002.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/003.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+            <div class="column">
+                <img src="images/004.jpg"  style="width:150">
+                <h3>Description ni Agigi</h3>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- <img src="images/playlist.jpg"> -->
     <!-- <table> 
