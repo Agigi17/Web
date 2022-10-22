@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Playlist</title>
+
+    <!-- styling code here -->
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+           /* background-image: url('images/playlist.jpg'); */
+           height: 100vh;
+           width: 100%;
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+          }
+       
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+            right: 0;
+            top: 10px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            color: #FF6600;
+        }
+
+     
+        .row::after{
+       content: "";
+       clear: both;
+       display: table;
+            }
+
+         .column {
+    float: rght;
+    width: 150;
+    padding: 30px;
+     }
+
+
+
+    </style>
+</head>
+
+
+<body>
+      
+    <ul>
+        
+        <li><a href="home.html"  title="homepage link">HOME</a></li>
+        <li><a href="aboutme.html" target="_blank">ABOUT ME</a></li>
+        <li><a href="playlist.html" target="_blank">PLAYLIST</a></li>
+        
+    </ul>
+
+    <div class="row">
+        <div class="column">
+          <img src="images/001.jpg" style="width:150">
+        </div>
+        <div class="column">
+            <img src="images/002.jpg"  style="width:150">
+          </div>
+          <div class="column">
+            <img src="images/003.jpg"  style="width:150">
+          </div>
+          <div class="column">
+            <img src="images/004.jpg"  style="width:150">
+          </div>
+
+    <!-- <img src="images/playlist.jpg"> -->
+    <!-- <table> 
+    <tr>
+        <td><img src="images/001.jpg" width="150" height="250"></td> 
+        <td><img src="images/002.jpg" width="150" height="250"></td>
+        <td><img src="images/003.jpg" width="150" height="250"></td>
+        <td><img src="images/004.jpg" width="150" height="250"></td>
+        
+
+
+    </tr>
+
+
+    </table> -->
+
+
+</body>
+
+</html>
